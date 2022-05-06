@@ -1,0 +1,189 @@
+.viewReport {
+    
+
+    width: 3508px;
+    
+
+}
+.viewReport .report-container {
+    border: 1px solid black;
+    padding: 0.5rem;
+    overflow: hidden;
+    transform: scale(0.9);
+    
+    
+}
+
+.report-container .first-row {
+    border-left: 25px solid rgba(59,149,212,1);
+    width: 3508px;
+    
+}
+.report-container .first-row h1 {
+    
+   letter-spacing: 3px;
+    font-size: 54px;
+}
+.report-container .first-row {
+    background: rgb(255,255,255);
+    background: linear-gradient(70deg, rgba(255,255,255,1) 78%, rgba(59,149,212,1) 78.2%);
+
+}
+.report-container .doc-col .doc-name {
+    color: red;
+    font-weight: 900;
+} 
+.report-container .doc-col p {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 2px;
+}
+.report-container .doc-col-2 {
+    padding-left: 4rem;
+}
+.report-container .doc-col-2 .doc-name {
+    color: red;
+    font-weight: 900;
+
+} 
+.report-container .doc-col-2 p {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 2px;
+}
+.report-container .third-row {
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+}
+.report-container .third-row p {
+    font-weight: 700;
+    margin-top: 10px;
+}
+.report-container .middle-container {
+
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+ .middle-container img{
+   
+    text-align: center;
+    width: 500px;
+    margin-top: 7rem;
+    opacity: 0.2;
+    margin-left: 15rem;
+    position: relative;
+}
+.report-container .table, td , th {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+.report-container .table td {
+    padding: 0.2rem;
+}
+.report-container .table {
+    transform: scale(0.8);
+}
+.report-container .third-bottom-row{
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+}
+.report-container .third-bottom-row p {
+    font-weight: 700;
+}
+.report-container .third-bottom-row  li {
+    display: inline;
+    font-weight: 600;
+    margin-right: 0.2em;
+    font-size: 12px;
+}
+.report-container .third-bottom-row  {
+    padding: 0 !important;
+}
+.report-container .third-bottom-row  li::before {
+    content: '\ffed';
+    margin-right: 0.2em;
+}
+.report-container .second-bottom-row p {
+font-weight: 600;
+font-size: 13px;
+margin-top: 5px;
+}
+.report-container .before-col, .after-col {
+    background-color: red;
+}
+.report-container .between-col {
+    background-color: rgb(1, 1, 17);
+    color: white;
+}
+.report-container .between-col p {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 8px;
+}
+@media (max-width: 912px)
+    {
+    .report-container .doc-col-2 {
+        padding-left: 0rem;
+    }
+    .report-container .doc-col-2 p {
+        line-height: normal;
+    }
+    
+    .report-container .doc-col p {
+        line-height: normal;
+    } 
+}
+@media (max-width: 912px) {
+    .middle-container img {
+        width: 200px;
+        margin-left: 1.5rem;
+    } 
+    .viewReport {
+        margin-left: 2rem !important;
+    }
+}
+@media print {
+    body {-webkit-print-color-adjust: exact;
+        width: 21cm;
+        height: 29.7cm;
+        margin: 30mm 45mm 30mm 45mm; 
+    }
+    .report-container .first-row h1 {
+        font-size: 40px;
+    }
+    .report-container .first-row h1 span {
+
+        color: #fff;
+        text-align: right;
+        background: linear-gradient(70deg, rgba(255,255,255,1) 10%, rgba(59,149,212,1) 10.2%) !important;
+    }
+    .report-container .first-row h1 span::before {
+        content: " ";
+        color: rgba(59,149,212,1);
+    }
+    
+
+    .viewReport .report-container {
+        border: none !important;
+        padding: 0 !important;
+        height: 130vh;
+    }
+    .viewReport {
+        padding: 0 !important;
+    }
+    .report-container .table, td , th  {
+        border: 1px solid black !important;
+    }
+    .report-container .middle-container{
+        height: 20vh;
+    }
+    .middle-container img {
+        margin-left: 15rem !important;
+        margin-top: 0 !important;
+        position: absolute;
+        transform: scale(1.4);
+    }
+    }
