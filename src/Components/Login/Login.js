@@ -60,12 +60,12 @@ export default class Login extends Component {
                     <h3 className='fw-bold'>Sign In</h3>
                     <p className='mb-3 text-muted'>Sign in into your accont</p>
                   </div>
-                  <Form>
+                  <Form onSubmit={this.submitForm}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                      <Form.Control type="email" placeholder="Enter email" />
+                      <Form.Control type="email" placeholder="Enter email" value={this.state.username} onChange = {this.onChange} />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicPassword">
-                      <Form.Control type="password" placeholder="Password" />
+                      <Form.Control type="password" placeholder="Password" value={this.state.password} onChange={this.onChange} />
                     </Form.Group>
                     <div className='mb-4 d-flex'>
                       <span className='me-auto'><Link to="/" style={{textDecoration:'none'}}>Neead an account?</Link></span>
